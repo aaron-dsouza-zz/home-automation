@@ -21,6 +21,7 @@ public class LifxMessageFactory
   public NMessage makeMessage(LinkMessage lm) 
       throws Exception
   {
+    System.out.println(lm.getByteArray());
     //
     // TODO - convert linkMessage driver specific NMessage
     return null;

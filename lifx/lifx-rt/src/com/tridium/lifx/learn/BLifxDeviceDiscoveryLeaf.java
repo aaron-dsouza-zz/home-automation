@@ -55,7 +55,7 @@ public class BLifxDeviceDiscoveryLeaf
     //
     // TODO - specify the default name for discovery entry
     //
-    return null;
+    return "Lifx Bulb";
   }
 
   

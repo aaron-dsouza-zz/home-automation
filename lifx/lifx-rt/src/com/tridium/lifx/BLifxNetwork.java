@@ -5,10 +5,13 @@ package com.tridium.lifx;
 
 //import javax.baja.license.Feature;
 import javax.baja.naming.BOrd;
+import javax.baja.nre.util.Array;
 import javax.baja.sys.*;
 import javax.baja.util.Lexicon;
 import javax.baja.nre.annotations.*;
 
+import com.tridium.lifx.learn.BLifxDeviceDiscoveryLeaf;
+import com.tridium.lifx.message.LifxGetService;
 import com.tridium.ndriver.BNNetwork;
 import com.tridium.ndriver.comm.*;
 import com.tridium.ndriver.datatypes.*;
@@ -118,13 +121,11 @@ public class BLifxNetwork
 
   /**
    * Slot for the <code>submitDiscoveryJob</code> action.
-   * @see com.tridium.smoke.BSmokeNetwork#submitDiscoveryJob()
    */
   public static final Action submitDiscoveryJob = newAction(Flags.HIDDEN,new BLifxDeviceDiscoveryPreferences(),null);
 
   /**
    * Invoke the <code>submitDiscoveryJob</code> action.
-   * @see com.tridium.smoke.BSmokeNetwork#submitDiscoveryJob
    */
   public BOrd submitDiscoveryJob(BNDiscoveryPreferences preferences) { return (BOrd)invoke(submitDiscoveryJob,preferences,null); }
 
@@ -192,8 +193,12 @@ public class BLifxNetwork
   public BINDiscoveryObject[] getDiscoveryObjects(BNDiscoveryPreferences prefs) 
      throws Exception
   {
-    // TODO Auto-generated method stub
-    return null;
+    Array discoveredLifxDevices = new Array(BLifxDeviceDiscoveryLeaf.class);
+    BIpAddress udpBroadcastAddress = new BIpAddress("192.168.1.255", 56700);
+    LifxGetService getServiceMsg = new LifxGetService(udpBroadcastAddress);
+    NMessage response = ((NComm)getUdpConfig().comm()).sendRequest(getServiceMsg);
+    System.out.println("Response received");
+    return (BLifxDeviceDiscoveryLeaf[]) discoveredLifxDevices.trim();
   }
   
   public BOrd doSubmitDiscoveryJob(BNDiscoveryPreferences preferences)
