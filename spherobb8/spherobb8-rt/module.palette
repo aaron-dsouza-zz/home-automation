@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="1.0">
+<p m="b=baja" t="b:UnrestrictedFolder">
+
+ <p n="SpheroBB8Network" m="x=spherobb8" t="x:SpheroBB8Network"/>
+ <p n="SpheroBB8Device" t="x:SpheroBB8Device"/>
+ <p n="SpheroBB8DeviceFolder" t="x:SpheroBB8DeviceFolder"/>
+
+ <p n="SpheroBB8PointFolder" t="x:SpheroBB8PointFolder"/>
+
+</p>
+</bajaObjectGraph>

@@ -1,0 +1,23 @@
+<!-- Types -->
+<types>
+
+<!-- com.tridium.spherobb8 -->
+<type name="SpheroBB8Network" class="com.tridium.spherobb8.BSpheroBB8Network" />
+<type name="SpheroBB8Device" class="com.tridium.spherobb8.BSpheroBB8Device" />
+<type name="SpheroBB8DeviceFolder" class="com.tridium.spherobb8.BSpheroBB8DeviceFolder" />
+
+<!-- com.tridium.spherobb8.comm -->
+<type name="SpheroBB8SerialCommConfig" class="com.tridium.spherobb8.comm.BSpheroBB8SerialCommConfig" />
+
+<!-- com.tridium.spherobb8.learn -->
+<type name="SpheroBB8DeviceDiscoveryPreferences" class="com.tridium.spherobb8.learn.BSpheroBB8DeviceDiscoveryPreferences" />
+<type name="SpheroBB8DeviceDiscoveryLeaf" class="com.tridium.spherobb8.learn.BSpheroBB8DeviceDiscoveryLeaf" />
+
+<!-- com.tridium.spherobb8.point -->
+<type name="SpheroBB8PointDeviceExt" class="com.tridium.spherobb8.point.BSpheroBB8PointDeviceExt" />
+<type name="SpheroBB8PointFolder" class="com.tridium.spherobb8.point.BSpheroBB8PointFolder" />
+<type name="SpheroBB8ProxyExt" class="com.tridium.spherobb8.point.BSpheroBB8ProxyExt" />
+<type name="SpheroBB8PointDiscoveryPreferences" class="com.tridium.spherobb8.point.BSpheroBB8PointDiscoveryPreferences" />
+<type name="SpheroBB8PointDiscoveryLeaf" class="com.tridium.spherobb8.point.BSpheroBB8PointDiscoveryLeaf" />
+
+</types>
