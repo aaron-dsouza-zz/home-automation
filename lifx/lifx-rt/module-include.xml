@@ -1,0 +1,20 @@
+<!-- Types -->
+<types>
+
+<!-- com.tridium.lifx -->
+<type name="LifxNetwork" class="com.tridium.lifx.BLifxNetwork" />
+<type name="LifxDevice" class="com.tridium.lifx.BLifxDevice" />
+<type name="LifxDeviceFolder" class="com.tridium.lifx.BLifxDeviceFolder" />
+
+<!-- com.tridium.lifx.learn -->
+<type name="LifxDeviceDiscoveryPreferences" class="com.tridium.lifx.learn.BLifxDeviceDiscoveryPreferences" />
+<type name="LifxDeviceDiscoveryLeaf" class="com.tridium.lifx.learn.BLifxDeviceDiscoveryLeaf" />
+
+<!-- com.tridium.lifx.point -->
+<type name="LifxPointDeviceExt" class="com.tridium.lifx.point.BLifxPointDeviceExt" />
+<type name="LifxPointFolder" class="com.tridium.lifx.point.BLifxPointFolder" />
+<type name="LifxProxyExt" class="com.tridium.lifx.point.BLifxProxyExt" />
+<type name="LifxPointDiscoveryPreferences" class="com.tridium.lifx.point.BLifxPointDiscoveryPreferences" />
+<type name="LifxPointDiscoveryLeaf" class="com.tridium.lifx.point.BLifxPointDiscoveryLeaf" />
+
+</types>

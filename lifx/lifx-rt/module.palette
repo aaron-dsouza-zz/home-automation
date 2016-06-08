@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="1.0">
+<p m="b=baja" t="b:UnrestrictedFolder">
+
+ <p n="LifxNetwork" m="x=lifx" t="x:LifxNetwork"/>
+ <p n="LifxDevice" t="x:LifxDevice"/>
+ <p n="LifxDeviceFolder" t="x:LifxDeviceFolder"/>
+
+ <p n="LifxPointFolder" t="x:LifxPointFolder"/>
+
+</p>
+</bajaObjectGraph>
