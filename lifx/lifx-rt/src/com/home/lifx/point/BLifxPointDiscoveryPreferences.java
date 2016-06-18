@@ -1,15 +1,14 @@
 /*
  * copyright 2012 Tridium, Inc. All Rights Reserved.
  */
-package com.tridium.lifx.learn;
+package com.home.lifx.point;
 
 import javax.baja.sys.*;
-import javax.baja.nre.annotations.*;
 
 import com.tridium.ndriver.discover.*;
 
-//@NiagaraSlots
-public class BLifxDeviceDiscoveryPreferences
+//@NiagaraSlots( properties = { } )
+public class BLifxPointDiscoveryPreferences
   extends BNDiscoveryPreferences
 {
 /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
@@ -19,13 +18,13 @@ public class BLifxDeviceDiscoveryPreferences
 ////////////////////////////////////////////////////////////////
   
   public Type getType() { return TYPE; }
-  public static final Type TYPE = Sys.loadType(BLifxDeviceDiscoveryPreferences.class);
+  public static final Type TYPE = Sys.loadType(BLifxPointDiscoveryPreferences.class);
 
 /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
   
   public Type getDiscoveryLeafType()
   {
-    return BLifxDeviceDiscoveryLeaf.TYPE;
+    return BLifxPointDiscoveryLeaf.TYPE;
   }
 
 }

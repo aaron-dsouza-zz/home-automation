@@ -1,10 +1,9 @@
 /*
  * Copyright 2016 Tridium, Inc. All Rights Reserved.
  */
-package com.tridium.lifx;
+package com.home.lifx;
 
 import javax.baja.sys.*;
-import javax.baja.nre.annotations.*;
 
 import com.tridium.ndriver.BNDeviceFolder;
 

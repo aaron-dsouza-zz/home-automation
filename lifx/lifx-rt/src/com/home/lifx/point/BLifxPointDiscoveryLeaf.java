@@ -1,25 +1,14 @@
 /**
  * Copyright 2013 - All Rights Reserved.
  */
-package com.tridium.lifx.point;
+package com.home.lifx.point;
 
-import javax.baja.control.BBooleanPoint;
-import javax.baja.control.BBooleanWritable;
 import javax.baja.control.BControlPoint;
-import javax.baja.control.BEnumPoint;
-import javax.baja.control.BEnumWritable;
 import javax.baja.control.BNumericPoint;
-import javax.baja.control.BNumericWritable;
-import javax.baja.control.BStringPoint;
-import javax.baja.control.BStringWritable;
 import javax.baja.registry.TypeInfo;
-import javax.baja.status.BStatusBoolean;
-import javax.baja.status.BStatusEnum;
 import javax.baja.status.BStatusNumeric;
-import javax.baja.status.BStatusString;
 import javax.baja.status.BStatusValue;
 import javax.baja.sys.BComponent;
-import javax.baja.sys.BEnum;
 import javax.baja.sys.BFacets;
 import javax.baja.sys.Flags;
 import javax.baja.sys.Property;
@@ -52,58 +41,60 @@ public class BLifxPointDiscoveryLeaf
     extends BNPointDiscoveryLeaf
 {
 /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
-
+/*@ $com.home.lifx.point.BLifxPointDiscoveryLeaf(2304576146)1.0$ @*/
+/* Generated Sun Jun 12 01:07:10 IST 2016 by Slot-o-Matic (c) Tridium, Inc. 2012 */
 
 ////////////////////////////////////////////////////////////////
 // Property "statusValue"
 ////////////////////////////////////////////////////////////////
   
   /**
-   * Slot for the <code>statusValue</code> property.
-   * @see com.honeywell.redlink.ui.BLifxPointDiscoveryLeaf#getStatusValue
-   * @see com.honeywell.redlink.ui.BLifxPointDiscoveryLeaf#setStatusValue
+   * Slot for the {@code statusValue} property.
+   * @see #getStatusValue
+   * @see #setStatusValue
    */
-  public static final Property statusValue = newProperty(Flags.READONLY, new BStatusNumeric(),null);
+  public static final Property statusValue = newProperty(Flags.READONLY, new BStatusNumeric(), null);
   
   /**
-   * Get the <code>statusValue</code> property.
-   * @see com.honeywell.redlink.ui.BLifxPointDiscoveryLeaf#statusValue
+   * Get the {@code statusValue} property.
+   * @see #statusValue
    */
   public BStatusValue getStatusValue() { return (BStatusValue)get(statusValue); }
   
   /**
-   * Set the <code>statusValue</code> property.
-   * @see com.honeywell.redlink.ui.BLifxPointDiscoveryLeaf#statusValue
+   * Set the {@code statusValue} property.
+   * @see #statusValue
    */
-  public void setStatusValue(BStatusValue v) { set(statusValue,v,null); }
+  public void setStatusValue(BStatusValue v) { set(statusValue, v, null); }
 
 ////////////////////////////////////////////////////////////////
 // Property "facets"
 ////////////////////////////////////////////////////////////////
   
   /**
-   * Slot for the <code>facets</code> property.
-   * @see com.honeywell.redlink.ui.BLifxPointDiscoveryLeaf#getFacets
-   * @see com.honeywell.redlink.ui.BLifxPointDiscoveryLeaf#setFacets
+   * Slot for the {@code facets} property.
+   * @see #getFacets
+   * @see #setFacets
    */
-  public static final Property facets = newProperty(Flags.READONLY, BFacets.DEFAULT,SfUtil.incl(SfUtil.MGR_UNSEEN));
+  public static final Property facets = newProperty(Flags.READONLY, BFacets.DEFAULT, BFacets.make(SfUtil.KEY_MGR, SfUtil.MGR_UNSEEN));
   
   /**
-   * Get the <code>facets</code> property.
-   * @see com.honeywell.redlink.ui.BLifxPointDiscoveryLeaf#facets
+   * Get the {@code facets} property.
+   * @see #facets
    */
   public BFacets getFacets() { return (BFacets)get(facets); }
   
   /**
-   * Set the <code>facets</code> property.
-   * @see com.honeywell.redlink.ui.BLifxPointDiscoveryLeaf#facets
+   * Set the {@code facets} property.
+   * @see #facets
    */
-  public void setFacets(BFacets v) { set(facets,v,null); }
+  public void setFacets(BFacets v) { set(facets, v, null); }
 
 ////////////////////////////////////////////////////////////////
 // Type
 ////////////////////////////////////////////////////////////////
   
+  @Override
   public Type getType() { return TYPE; }
   public static final Type TYPE = Sys.loadType(BLifxPointDiscoveryLeaf.class);
 

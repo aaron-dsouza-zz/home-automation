@@ -1,14 +1,12 @@
 /**
  * Copyright 2016 Tridium, Inc. All Rights Reserved.
  */
-package com.tridium.lifx.point;
+package com.home.lifx.point;
 
 import javax.baja.sys.*;
 import javax.baja.status.*;
 import javax.baja.driver.point.*;
-import javax.baja.nre.annotations.*;
 
-import com.tridium.lifx.*;
 import com.tridium.driver.util.DrUtil;
 
 
@@ -46,17 +44,17 @@ public class BLifxProxyExt
   /**
    * Get the network cast to a BLifxNetwork.
    */
-  public final BLifxNetwork getLifxNetwork()
+  public final com.home.lifx.BLifxNetwork getLifxNetwork()
   {
-    return (BLifxNetwork)getNetwork();
+    return (com.home.lifx.BLifxNetwork)getNetwork();
   }
 
   /**
    * Get the device cast to a BLifxDevice.
    */
-  public final BLifxDevice getBLifxDevice()
+  public final com.home.lifx.BLifxDevice getBLifxDevice()
   {
-    return (BLifxDevice)DrUtil.getParent(this, BLifxDevice.TYPE);
+    return (com.home.lifx.BLifxDevice)DrUtil.getParent(this, com.home.lifx.BLifxDevice.TYPE);
   }
 
   /**

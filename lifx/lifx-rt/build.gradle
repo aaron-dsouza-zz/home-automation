@@ -27,6 +27,12 @@ dependencies {
 
 }
 
+jar {
+  from("src") {
+    include "rc/*.png"
+  }
+}
+
 moduleTestJar {
   from('srcTest') {
   }

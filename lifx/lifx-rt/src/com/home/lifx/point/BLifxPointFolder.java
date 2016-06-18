@@ -1,13 +1,10 @@
 /**
  * Copyright 2016 Tridium, Inc. All Rights Reserved.
  */
-package com.tridium.lifx.point;
+package com.home.lifx.point;
 
 import javax.baja.sys.*;
 import javax.baja.driver.point.*;
-
-import com.tridium.lifx.*;
-import javax.baja.nre.annotations.*;
 
 /**
  * BLifxPointFolder
@@ -38,18 +35,18 @@ public class BLifxPointFolder
    * Get the network cast to a BLifxNetwork.
    * @return network as a BLifxNetwork.
    */
-  public final BLifxNetwork getLifxNetwork()
+  public final com.home.lifx.BLifxNetwork getLifxNetwork()
   {
-    return (BLifxNetwork)getNetwork();
+    return (com.home.lifx.BLifxNetwork)getNetwork();
   }
 
   /**
    * Get the device cast to a BLifxDevice.
    * @return device as a BLifxDevice.
    */
-  public final BLifxDevice getLifxDevice()
+  public final com.home.lifx.BLifxDevice getLifxDevice()
   {
-    return (BLifxDevice)getDevice();
+    return (com.home.lifx.BLifxDevice)getDevice();
   }
 
 }
